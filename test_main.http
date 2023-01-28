@@ -1,0 +1,40 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+### Hey
+
+POST http://127.0.0.1:8000/hello/
+Content-Type: application/json
+
+{
+  "name": "User"
+}
+
+###
+
+https://google.com
+
+### test_write_file_cache
+POST http://localhost:8000/write_file_cache/
+Content-Type: application/json
+
+{
+  "url": "https://google.com",
+  "readability": "holy cat, see! this is a larva"
+}
+
+### test_write_database
+POST http://localhost:8000/write_database/
+Content-Type: application/json
+
+{
+  "url": "https://google.com",
+  "readability": "holy cat, see! this is a larva"
+}
